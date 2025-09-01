@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Business International</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      color: #564837;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: url('cyberB3.jpg') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #c5a88f;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 2s ease;
+    }
+
+    .hero img.logo {
+      position: absolute;
+      top: 20px;
+      width: 200px;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero h2 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Scroll arrow */
+    .scroll-down {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: #ffffff;
+      cursor: pointer;
+      animation: bounce 2s infinite;
+      z-index: 2;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translate(-50%, 0); }
+      40% { transform: translate(-50%, -10px); }
+      60% { transform: translate(-50%, -5px); }
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    h2 {
+      color: #c5a88f;
+      margin-bottom: 20px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    iframe {
+      border-radius: 8px;
+      border: none;
+    }
+
+    .rotate {
+      animation: spin 20s linear infinite;
+      display: block;
+      margin: 0px auto;
+      width: 300px;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    footer {
+      background: #564837;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="cyberlogo.png" alt="Cyber Business Logo" class="logo">
+    <div class="hero-content">
+      <h1>Cyber Business International</h1>
+      <h2>Your One-Stop Solution for Personal, Business & Travel Services. Professional Consultation.</h2>
+    </div>
+    <a href="#contact" class="scroll-down">&#8595;</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Cyber Business International, we make paperwork, applications, and formalities simple. Whether you’re applying for a passport, registering a business, or securing travel visas, our expert team ensures a smooth, stress-free process from start to finish.</p>
+  </section>
+
+  <!-- Rotating Globe -->
+  <section>
+    <img src="CyberGlobe1.png" alt="Rotating Globe" class="rotate">
+  </section>
+
+  <!-- Vision & Mission -->
+  <section>
+    <h2>Our Vision</h2>
+    <p>Established in 2024, Cyber Business International is committed to empowering and transforming the lives of our clients by removing barriers, streamlining processes, and connecting innovative ideas to real-world results. Through transparent collaboration, trustworthy partnerships, and a dedication to excellent customer service, we aim to become the leading provider of personal, business, and travel document services in the Caribbean and beyond.</p>
+
+    <h2>Our Mission</h2>
+    <p>At Cyber Business International, our mission is to serve every client with professionalism, efficiency, and integrity. We are committed to meeting individual, business, and travel service needs in a friendly and customer-focused environment. By delivering reliable document processing, business registration, and visa application support, we ensure exceptional customer care that drives success for every person and company we work with.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We handle the details so you can focus on what matters.</p>
+    <p><strong>Individual Services:</strong> License appointment, Resume construction/reconstruction, NIS/BIR, Birth certificates, Processing legal documents.</p>
+    <p><strong>Caricom Services:</strong> Passport renewals/applications, CSME application, Birth papers, Work permit application, Rights of establishment application, CIS application, Processing legal documents.</p>
+    <p><strong>Business Services:</strong> Sole trader, Partnership registration, LLC, NPO, NIS/BIR, Logos, Graphics, OPR registration, Post registration AMS, Bank documentation assistance, Company profiling/business plan, Stamps.</p>
+    <p><strong>Travel Services:</strong> Passport applications (first-time, renewal, child/infant), SCHENGEN Visa, Canada, US, UK, China visas, Processing legal documents.</p>
+  </section>
+
+  <!-- Contact Form -->
+<section id="contact" style="background:#ebdacc; padding:60px 20px;">
+  <h2 style="color:#c1724d; margin-bottom:30px;">Contact Us</h2>
+  <form id="contactForm" style="max-width:800px; margin:auto; background:#fff; padding:30px; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.15);">
+    
+    <label style="display:block; margin:15px 0 5px; color:#564837;">Full Name</label>
+    <input type="text" name="name" required style="width:100%; padding:10px; border:1px solid #c5a88f; border-radius:6px;">
+    
+    <label style="display:block; margin:15px 0 5px; color:#564837;">Phone Number</label>
+    <input type="text" name="phone" required style="width:100%; padding:10px; border:1px solid #c5a88f; border-radius:6px;">
+    
+    <label style="display:block; margin:15px 0 5px; color:#564837;">Email</label>
+    <input type="email" name="email" required style="width:100%; padding:10px; border:1px solid #c5a88f; border-radius:6px;">
+
+    <h3 style="color:#c1724d; margin:20px 0 10px;">Individual Services</h3>
+    <div style="text-align:left;">
+      <label><input type="checkbox" name="service" value="License appointment"> License appointment</label><br>
+      <label><input type="checkbox" name="service" value="Resume construction / reconstruction"> Resume construction / reconstruction</label><br>
+      <label><input type="checkbox" name="service" value="NIS / BIR"> NIS / BIR</label><br>
+      <label><input type="checkbox" name="service" value="Birth certificates"> Birth certificates</label><br>
+      <label><input type="checkbox" name="service" value="Processing legal documents"> Processing legal documents</label>
+    </div>
+
+    <h3 style="color:#c1724d; margin:20px 0 10px;">Caricom Services</h3>
+    <div style="text-align:left;">
+      <label><input type="checkbox" name="service" value="Passport renewals, applications"> Passport renewals, applications</label><br>
+      <label><input type="checkbox" name="service" value="CSME application"> CSME application</label><br>
+      <label><input type="checkbox" name="service" value="Birth papers"> Birth papers</label><br>
+      <label><input type="checkbox" name="service" value="Work permit application"> Work permit application</label><br>
+      <label><input type="checkbox" name="service" value="Rights of establishment application"> Rights of establishment application</label><br>
+      <label><input type="checkbox" name="service" value="CIS application"> CIS application</label><br>
+      <label><input type="checkbox" name="service" value="Processing legal documents"> Processing legal documents</label>
+    </div>
+
+    <h3 style="color:#c1724d; margin:20px 0 10px;">Business Services</h3>
+    <div style="text-align:left;">
+      <label><input type="checkbox" name="service" value="Sole trader"> Sole trader</label><br>
+      <label><input type="checkbox" name="service" value="Bank docs"> Bank docs</label><br>
+      <label><input type="checkbox" name="service" value="Limited Liability Company (LLC)"> Limited Liability Company (LLC)</label><br>
+      <label><input type="checkbox" name="service" value="Non-Profit Organization (NPO)"> Non-Profit Organization (NPO)</label><br>
+      <label><input type="checkbox" name="service" value="NIS / BIR"> NIS / BIR</label><br>
+      <label><input type="checkbox" name="service" value="Logos"> Logos</label><br>
+      <label><input type="checkbox" name="service" value="Graphics"> Graphics</label><br>
+      <label><input type="checkbox" name="service" value="OPR registration"> OPR registration</label><br>
+      <label><input type="checkbox" name="service" value="Post registration am"> Post registration am</label><br>
+      <label><input type="checkbox" name="service" value="Bank Documentation Assistance"> Bank Documentation Assistance</label><br>
+      <label><input type="checkbox" name="service" value="Company profiling / business plan"> Company profiling / business plan</label><br>
+      <label><input type="checkbox" name="service" value="Partnership Registration"> Partnership Registration</label><br>
+      <label><input type="checkbox" name="service" value="BIR Applications - Partnerships & Companies"> BIR Applications - Partnerships & Companies</label><br>
+      <label><input type="checkbox" name="service" value="Stamps"> Stamps</label><br>
+      <label><input type="checkbox" name="service" value="Processing legal documents"> Processing legal documents</label>
+    </div>
+
+    <button type="submit" style="background:#c1724d; color:#fff; padding:12px 25px; border:none; border-radius:8px; font-size:16px; cursor:pointer; margin-top:20px;">Send to WhatsApp</button>
+  </form>
+</section>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = this.name.value;
+    const phone = this.phone.value;
+    const email = this.email.value;
+
+    const checkedServices = Array.from(this.querySelectorAll('input[type="checkbox"]:checked'))
+      .map(cb => cb.value)
+      .join(', ');
+
+    const message = `Cyber Business International%0AName: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AServices: ${checkedServices}`;
+    window.open(`https://wa.me/18682646478?text=${message}`, '_blank');
+  });
+</script>
+
+
+
+  <!-- Find Us -->
+  <section>
+    <h2>Find Us</h2>
+    <p>Click "Directions" and follow the map</p>
+    <iframe src="https://www.google.com/maps?q=7,+123+Duke+Street,+Port+of+Spain&output=embed" width="100%" height="400"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact us: <a href="mailto:cyberbusinessinternational@gmail.com">cyberbusinessinternational@gmail.com</a></p>
+    <p> <a href="https://www.facebook.com/people/Cyber-Business-International/61558814826574">Facebook</a> 
+        | <a href="https://www.instagram.com/cyberbusinessinternational">Instagram</a> |
+         <a href="https://www.tiktok.com/@cyberbusinessintl">TikTok</a> </p>
+    Powered by <a href="https://zachsdesigns.com" target="_blank">Zach’s Designs</a>
+  </footer>
+
+</body>
+</html>
